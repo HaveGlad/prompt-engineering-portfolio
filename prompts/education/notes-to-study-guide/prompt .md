@@ -1,4 +1,4 @@
-﻿# [Prompt Name] Template
+﻿# Notes to Study Guide Template
 
 ## Instructions for Use (delete this section when you build your actual prompt)
 
@@ -20,10 +20,9 @@ You justify both choices in `methodology.md`.
 
 **Purpose:** This prompt produces a study guide that prepares the user for a test based on their notes.
 
-**Structure:** 
-[Name your framework, your modified framework, or "custom structure," then list the parts it breaks into, for example: Context, Task, Constraints, Format.]
+**Structure:** R-I-S-E: Request, Input, Scenario, Expectation
 
-**Technique:** Few-shot
+**Technique:** Zero-shot
 
 ---
 
@@ -31,35 +30,40 @@ You justify both choices in `methodology.md`.
 
 Organize your prompt into labeled parts, in the order that makes sense for your task. Each label is one part of your structure. Somewhere in here, state the core task or objective clearly, since that is the part the AI most needs to get right. If your technique is few-shot, include your example(s) here; if it is chain-of-thought, include the instruction to reason step by step.
 
-**[PART LABEL 1]:**
-[The content for this part.]
+**Request:**
+Produce a study guide based on my notes.
 
-**[PART LABEL 2]:**
-[The content for this part.]
+**Input:**
+My notes: [NOTES]
 
-**[PART LABEL 3]:**
-[The content for this part.]
+**Scenario:**
+These notes are for [CLASS_NAME] class and I am in [GRADE_LEVEL] grade. I am studying for [GOAL].
 
-[Add or remove parts so the structure matches your design.]
+**Expectation:**
+The notes should be reorganized so they are clear and concise, and then there should be 5-10 questions afterward to check understanding.
 
 ---
 
 ## Context and Inputs
 
 List the information the user has to supply, written as placeholders:
-- **[PLACEHOLDER_1]:** [What goes here and why it matters]
-- **[PLACEHOLDER_2]:** [What goes here and why it matters]
-- **[PLACEHOLDER_3]:** [What goes here and why it matters]
+- **[NOTES]:** Paste your notes here so the AI can use them.
+- **[CLASS_NAME]:** Input the name of the class the notes are from so the AI knows the context of the class.
+- **[GRADE_LEVEL]:** Input what grade you are in so the AI knows what level the class is.
+- **[GOAL]:** Input what you are studying for so the AI can give you a relevant study guide.
 
 ---
 
 ## Output Requirements
 
-**Format:** [How the answer should be structured, for example length, headings, bullets, or a table.]
+**Format:** The notes provided by the user should be reorganized in clear, concise bullet points. Then, there should be 5-10 questions 
+[How the answer should be structured, for example length, headings, bullets, or a table.]
 
-**Constraints:** [Rules that keep the AI on scope and protect quality.]
+**Constraints:** 
+[Rules that keep the AI on scope and protect quality.]
 
-**Tone and Style:** [The voice, reading level, and style you want.]
+**Tone and Style:** 
+[The voice, reading level, and style you want.]
 
 ---
 
