@@ -12,8 +12,6 @@
 
 ## The Prompt
 
-Organize your prompt into labeled parts, in the order that makes sense for your task. Each label is one part of your structure. Somewhere in here, state the core task or objective clearly, since that is the part the AI most needs to get right. If your technique is few-shot, include your example(s) here; if it is chain-of-thought, include the instruction to reason step by step.
-
 **Request:**
 Produce a study guide based on my notes.
 
