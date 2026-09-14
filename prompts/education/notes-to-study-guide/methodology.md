@@ -1,8 +1,8 @@
-# Design Methodology: [Prompt Name]
+﻿# Design Methodology: [Prompt Name]
 
 ## Design Goal
 
-[A sentence or two on what you were trying to achieve and who the prompt is for.]
+The goal of this prompt is to help students study for tests and quizzes by creating a study guide and generating questions based on their notes.
 
 ---
 
@@ -10,19 +10,16 @@
 
 Explain the two design choices behind your prompt and why they fit the task.
 
-**Structure I used:** [A lesson framework, a modified framework, or your own structure, for example: C-A-R-E, a modified R-T-F, or a custom Context/Task/Constraints/Format layout.]
+**Structure I used:** R-I-S-E
 
 **Why this structure fits my task:**
-- [Reason 1]
-- [Reason 2]
+- This structure allows user input.
+- This structure describes the situation and what the user is looking for.
 
-**Technique I used:** [Zero-shot, few-shot, chain-of-thought, or zero-shot chain-of-thought.]
+**Technique I used:** Zero-shot
 
 **Why this technique fits my task:**
-[For example: I used few-shot because the AI needed to copy a specific tone, so I gave it two sample outputs. Or: I used zero-shot chain-of-thought because the task needs step-by-step logic but I did not have examples, so I added "Think through this step by step before you answer."]
-
-**Example of modifying a framework (delete if not relevant):**
-I started from R-T-F (Role, Task, Format) and added two parts. I added a **Constraints** part to stop the model from making pricing claims, and an **Example** part to lock in the tone I wanted. My final structure was Role, Task, Constraints, Example, Format. Each added part solved a specific problem the plain framework left open.
+I didn't have any examples to give, so I just said what I was looking for, making a detailed zero-shot technique.
 
 ---
 
@@ -32,9 +29,10 @@ Justify each part of your prompt: what it is, what goes in it, and why the promp
 
 | Part | What I put here | Why the prompt needs it |
 |------|-----------------|-------------------------|
-| [Part 1] | [Your text] | [Reason] |
-| [Part 2] | [Your text] | [Reason] |
-| [Part 3] | [Your text] | [Reason] |
+| Request | Produce a study guide based on my notes. | Tells the AI what it should do. |
+| Input | My notes: [NOTES] | Gives the AI data to use. |
+| Scenario | These notes are for [CLASS_NAME] class and I am in [GRADE_LEVEL] grade. I am studying for [GOAL]. | Gives the AI context around the request, so it can produce relevant results. |
+| Expectation | The notes should be reorganized so they are clear and concise, and then there should be 5-10 questions afterward to check understanding. | Tells the AI what the result should look like. |
 
 ---
 
@@ -44,7 +42,7 @@ Test your prompt against a naive baseline, a plain version of the same request w
 
 **Baseline I compared against:**
 ```
-[Your plain, naive version of the same request]
+Make a study guide for these notes. [Paste notes here]
 ```
 
 | Version | Result / score | What changed |
