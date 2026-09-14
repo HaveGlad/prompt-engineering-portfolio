@@ -1,21 +1,5 @@
 ﻿# Notes to Study Guide Template
 
-## Instructions for Use (delete this section when you build your actual prompt)
-
-Your prompt must include:
-- A short description of what it does
-- Your prompt, organized into clearly labeled parts
-- At least one `[PLACEHOLDER]` in square brackets and CAPS
-- Output requirements so the AI knows what a good answer looks like
-
-**Two design choices to make and note:**
-- **Structure:** organize your prompt into intentional, labeled parts. Use a framework from the lesson (for example R-T-F or C-A-R-E), modify a framework, or design your own set of parts. What matters is that the structure is deliberate and every part earns its place.
-- **Technique:** the prompting method you use. Zero-shot (no examples), few-shot (one or more worked examples), chain-of-thought (ask the AI to reason step by step), or zero-shot chain-of-thought (add an instruction like "Think step by step" with no examples).
-
-You justify both choices in `methodology.md`.
-
----
-
 ## Overview
 
 **Purpose:** This prompt produces a study guide that prepares the user for a test based on their notes.
@@ -56,17 +40,10 @@ List the information the user has to supply, written as placeholders:
 
 ## Output Requirements
 
-**Format:** The notes provided by the user should be reorganized in clear, concise bullet points. Then, there should be 5-10 questions 
-[How the answer should be structured, for example length, headings, bullets, or a table.]
+**Format:** The notes provided by the user should be reorganized in clear, concise bullet points. Then, there should be 5-10 questions listed out in bullet points, and the answers will be at the very bottom.
 
-**Constraints:** 
-[Rules that keep the AI on scope and protect quality.]
+**Constraints:** Do not stray from the information provided in the notes, only use the information in the notes.
 
-**Tone and Style:** 
-[The voice, reading level, and style you want.]
+**Tone and Style:** Match the reading level and complexity of the notes/quiz to the grade level provided.
 
 ---
-
-## Additional Instructions (optional)
-
-Anything else the AI should keep in mind that does not fit one of the parts above. Delete this section if you do not need it.
