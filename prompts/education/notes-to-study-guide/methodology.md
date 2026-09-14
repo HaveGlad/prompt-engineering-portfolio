@@ -8,8 +8,6 @@ The goal of this prompt is to help students study for tests and quizzes by creat
 
 ## Design Approach: Structure and Technique
 
-Explain the two design choices behind your prompt and why they fit the task.
-
 **Structure I used:** R-I-S-E
 
 **Why this structure fits my task:**
@@ -25,8 +23,6 @@ I didn't have any examples to give, so I just said what I was looking for, makin
 
 ## Part-by-Part Justification
 
-Justify each part of your prompt: what it is, what goes in it, and why the prompt needs it. If your prompt is technique-driven and short (for example zero-shot chain-of-thought), justify the technique and the few parts you do have instead.
-
 | Part | What I put here | Why the prompt needs it |
 |------|-----------------|-------------------------|
 | Request | Produce a study guide based on my notes. | Tells the AI what it should do. |
@@ -38,8 +34,6 @@ Justify each part of your prompt: what it is, what goes in it, and why the promp
 
 ## Testing and Iteration
 
-Test your prompt against a naive baseline, a plain version of the same request with no deliberate structure or technique, and refine it based on what you see.
-
 **Baseline I compared against:**
 ```
 Make a study guide for these notes. [Paste notes here]
@@ -47,13 +41,13 @@ Make a study guide for these notes. [Paste notes here]
 
 | Version | Result / score | What changed |
 |---------|----------------|--------------|
-| Naive baseline | [result] | [notes] |
-| Version 1 | [result] | [notes] |
-| Final | [result] | [notes] |
+| Naive baseline | 25 | [] |
+| Version 1 | 75 | [notes] |
+| Final | 100 | [notes] |
 
-**What testing showed:** [In your own words, how your designed prompt performed compared to the baseline, and what you changed as a result.]
+**What testing showed:** My first designed prompt was pretty clear, but it lacked the constraints and specifics on the formatting of the result, because I just used the prompt itself and didn't include the output requirements. The naive baseline prompt was very vague and didn't give any details on what the outcome should look like or what should be included. So, I kept the prompt itself the same but added the outcome requirements, and that resulted in a clear prompt that provided details on how the outcome should be.
 
-**What I learned:** [What this taught you about prompt design.]
+**What I learned:** I learned the importance of not only including a clear structure, but also clearly listing the constraints and describing the expected format of the outcome. Details is key to a good prompt that produces the result you want.
 
 ---
 
