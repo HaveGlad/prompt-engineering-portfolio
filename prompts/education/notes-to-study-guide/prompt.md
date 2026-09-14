@@ -12,6 +12,10 @@
 
 ## The Prompt
 
+*The Full Prompt*
+Produce a study guide based on my notes. My notes: [NOTES] These notes are for [CLASS_NAME] class and I am in [GRADE_LEVEL] grade. I am studying for [GOAL]. The notes should be reorganized so they are clear and concise, and then there should be 5-10 questions afterward to check understanding.
+
+*The Prompt Breakdown*
 **Request:**
 Produce a study guide based on my notes.
 
