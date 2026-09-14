@@ -28,7 +28,6 @@ The notes should be reorganized so they are clear and concise, and then there sh
 
 ## Context and Inputs
 
-List the information the user has to supply, written as placeholders:
 - **[NOTES]:** Paste your notes here so the AI can use them.
 - **[CLASS_NAME]:** Input the name of the class the notes are from so the AI knows the context of the class.
 - **[GRADE_LEVEL]:** Input what grade you are in so the AI knows what level the class is.
