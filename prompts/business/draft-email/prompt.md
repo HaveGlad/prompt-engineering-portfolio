@@ -20,9 +20,9 @@ You justify both choices in `methodology.md`.
 
 **Purpose:** This prompt helps draft a basic business email.
 
-**Structure:** [Name your framework, your modified framework, or "custom structure," then list the parts it breaks into, for example: Context, Task, Constraints, Format.]
+**Structure:** R-T-F: Role, Task, Format
 
-**Technique:** [Zero-shot, few-shot, chain-of-thought, or zero-shot chain-of-thought.]
+**Technique:** Zero-shot
 
 ---
 
