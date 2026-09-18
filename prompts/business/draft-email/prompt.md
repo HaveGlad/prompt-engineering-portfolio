@@ -30,38 +30,35 @@ You justify both choices in `methodology.md`.
 
 Organize your prompt into labeled parts, in the order that makes sense for your task. Each label is one part of your structure. Somewhere in here, state the core task or objective clearly, since that is the part the AI most needs to get right. If your technique is few-shot, include your example(s) here; if it is chain-of-thought, include the instruction to reason step by step.
 
-**[PART LABEL 1]:**
-[The content for this part.]
+**Role:**
+Your job title is [JOB_TITLE] and your responsibilities include [JOB_RESPONSIBILITIES]
 
-**[PART LABEL 2]:**
-[The content for this part.]
+**Task:**
+Write an email to [RECIPIENT] about [TOPIC] and asking [REQUEST]. Send from [SENDER].
 
-**[PART LABEL 3]:**
-[The content for this part.]
-
-[Add or remove parts so the structure matches your design.]
+**Format:**
+The format of the email is a first line addressing the recipient, then a short paragraph (a sentence or two) explaining who you are. Then, write a paragraph about the topic and asking the request. Finish with a line thanking the recipient for their time, and then sign with the name of the sender.
 
 ---
 
 ## Context and Inputs
 
 List the information the user has to supply, written as placeholders:
-- **[PLACEHOLDER_1]:** [What goes here and why it matters]
-- **[PLACEHOLDER_2]:** [What goes here and why it matters]
-- **[PLACEHOLDER_3]:** [What goes here and why it matters]
+- **[JOB_TITLE]:** The title of your job, important so the AI knows what your job title is.
+- **[JOB_RESPONSIBILITIES]:** What you do in your job, so the AI knows what you actually do.
+- **[RECIPIENT]:** Who the email is being sent to, so the AI knows what name to put.
+- **[TOPIC]:** What the email is about, so the AI can include it in the email.
+- **[REQUEST]:** What you want to ask the recipient, that way the AI can incorporate it into the email and knows the purpose of the email.
+- **[SENDER]:** The name of the sender, so the AI can sign the name.
 
 ---
 
 ## Output Requirements
 
-**Format:** [How the answer should be structured, for example length, headings, bullets, or a table.]
+**Format:** The email should be formatted like a typical email, so there should be a first line addressing the recipient, then a short paragraph (a sentence or two, maximum three sentences) explaining who you are. Then, write a paragraph about the topic and ask the request. Finish with a line thanking the recipient for their time, and then sign with the name of the sender.
 
-**Constraints:** [Rules that keep the AI on scope and protect quality.]
+**Constraints:** Only use the information provided by the user.
 
-**Tone and Style:** [The voice, reading level, and style you want.]
+**Tone and Style:** Use a professional tone and match it to the job title.
 
 ---
-
-## Additional Instructions (optional)
-
-Anything else the AI should keep in mind that does not fit one of the parts above. Delete this section if you do not need it.
