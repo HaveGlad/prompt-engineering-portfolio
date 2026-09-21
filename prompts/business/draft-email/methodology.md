@@ -42,9 +42,9 @@ Write an email about [TOPIC].
 
 | Version | Result / score | What changed |
 |---------|----------------|--------------|
-| Naive baseline | 0 | [notes] |
-| Version 1 | 75 | [notes] |
-| Final | 90 | [notes] |
+| Naive baseline | 0 | Very basic request. |
+| Version 1 | 75 | Used a specific structure and technique, as well as a lot more details. |
+| Final | 90 | Filled in the placeholders with specific details. |
 
 **What testing showed:** Version 1 was way better than the naive baseline, but I didn't fill in the placeholders so it wasn't very specific. The final version had the placeholders filled in, and as long as they are filled in with very specific details, then it will work great.
 
