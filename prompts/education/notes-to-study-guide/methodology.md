@@ -1,4 +1,4 @@
-﻿# Design Methodology: [Prompt Name]
+﻿# Design Methodology: Notes to Study Guide
 
 ## Design Goal
 
@@ -41,9 +41,9 @@ Make a study guide for these notes. [Paste notes here]
 
 | Version | Result / score | What changed |
 |---------|----------------|--------------|
-| Naive baseline | 25 | [] |
-| Version 1 | 75 | [notes] |
-| Final | 100 | [notes] |
+| Naive baseline | 25 | Basic prompt with zero details. |
+| Version 1 | 75 | Added a clear structure with details and a specific technique. |
+| Final | 100 | Added output requirements. |
 
 **What testing showed:** My first designed prompt was pretty clear, but it lacked the constraints and specifics on the formatting of the result, because I just used the prompt itself and didn't include the output requirements. The naive baseline prompt was very vague and didn't give any details on what the outcome should look like or what should be included. So, I kept the prompt itself the same but added the outcome requirements, and that resulted in a clear prompt that provided details on how the outcome should be.
 
@@ -53,6 +53,8 @@ Make a study guide for these notes. [Paste notes here]
 
 ## Strengths and Limitations
 
-**Works well when:** [The conditions where this prompt performs best.]
-**Struggles when:** [Where it breaks down, and why.]
-**Would improve next:** [What you would refine with more time.]
+**Works well when:** Clear output requirements are given.
+
+**Struggles when:** Not enough notes given or no output requirements given.
+
+**Would improve next:** Give more of a detailed output that fits the individual needs of the user.
