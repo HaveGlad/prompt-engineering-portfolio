@@ -1,67 +1,45 @@
 ﻿# Mock Interview Template
 
-## Instructions for Use (delete this section when you build your actual prompt)
-
-Your prompt must include:
-- A short description of what it does
-- Your prompt, organized into clearly labeled parts
-- At least one `[PLACEHOLDER]` in square brackets and CAPS
-- Output requirements so the AI knows what a good answer looks like
-
-**Two design choices to make and note:**
-- **Structure:** organize your prompt into intentional, labeled parts. Use a framework from the lesson (for example R-T-F or C-A-R-E), modify a framework, or design your own set of parts. What matters is that the structure is deliberate and every part earns its place.
-- **Technique:** the prompting method you use. Zero-shot (no examples), few-shot (one or more worked examples), chain-of-thought (ask the AI to reason step by step), or zero-shot chain-of-thought (add an instruction like "Think step by step" with no examples).
-
-You justify both choices in `methodology.md`.
-
----
-
 ## Overview
 
 **Purpose:** This prompt runs a mock job interview with the user and then provides feedback on how the user did, with tips on how to improve.
 
-**Structure:** [Name your framework, your modified framework, or "custom structure," then list the parts it breaks into, for example: Context, Task, Constraints, Format.]
+**Structure:** ROLE- Role, Objective, Language, Example
 
-**Technique:** [Zero-shot, few-shot, chain-of-thought, or zero-shot chain-of-thought.]
+**Technique:** Few-shot
 
 ---
 
 ## The Prompt
 
-Organize your prompt into labeled parts, in the order that makes sense for your task. Each label is one part of your structure. Somewhere in here, state the core task or objective clearly, since that is the part the AI most needs to get right. If your technique is few-shot, include your example(s) here; if it is chain-of-thought, include the instruction to reason step by step.
+**Role:**
+You are an employer and you are hiring for [JOB_POSITION]. I am an applicant with [PREVIOUS_EXPERIENCE] experience and with these skills: [SKILLS].
 
-**[PART LABEL 1]:**
-[The content for this part.]
+**Objective:**
+Ask the user mock interview questions that simulates a real job interview.
 
-**[PART LABEL 2]:**
-[The content for this part.]
+**Language:**
+Use professional language that fits what an employer would sound like.
 
-**[PART LABEL 3]:**
-[The content for this part.]
-
-[Add or remove parts so the structure matches your design.]
+**Example:**
+Please include the following questions and as well as similar questions: What skills are your strongest? What are your career goals? [EXAMPLE_QUESTIONS]
 
 ---
 
 ## Context and Inputs
 
 List the information the user has to supply, written as placeholders:
-- **[PLACEHOLDER_1]:** [What goes here and why it matters]
-- **[PLACEHOLDER_2]:** [What goes here and why it matters]
-- **[PLACEHOLDER_3]:** [What goes here and why it matters]
+- **[JOB_POSITION]:** Input what job position you are interviewing for, so the AI knows the context of your job.
+- **[PREVIOUS_EXPERIENCE]:** Describe your previous experience in any job, preferably a job in the field you are applying for, so the AI has context on your situation.
+- **[SKILLS]:** List your skills so the AI knows more about your abilities related to the job.
+- **[EXAMPLE_QUESTIONS]:** Questions the user expects to be asked, in order for the AI to see what type of questions should be asked.
 
 ---
 
 ## Output Requirements
 
-**Format:** [How the answer should be structured, for example length, headings, bullets, or a table.]
+**Format:** Ask the interview questions one at a time, and after 10 questions, provide a summary of how well the user did in the interview and what they could improve on.
 
-**Constraints:** [Rules that keep the AI on scope and protect quality.]
+**Constraints:** Only use the information provided by the user, and format questions using the example questions as a guide.
 
-**Tone and Style:** [The voice, reading level, and style you want.]
-
----
-
-## Additional Instructions (optional)
-
-Anything else the AI should keep in mind that does not fit one of the parts above. Delete this section if you do not need it.
+**Tone and Style:** Keep a professional, conversational tone that matches that of an employer.
