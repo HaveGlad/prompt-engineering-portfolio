@@ -23,8 +23,10 @@ This prompt produces a mock interview scenario that helps the user prepare for a
 
 1. Open [`prompt.md`](./prompt.md) and copy the template.
 2. Replace the placeholders:
-   - `[PLACEHOLDER_1]`: [what to put here]
-   - `[PLACEHOLDER_2]`: [what to put here]
+   - `[JOB_POSITION]`: Input what job position you are interviewing for.
+   - `[PREVIOUS_EXPERIENCE]`: Describe your previous experience in any job, preferably a job in the field you are applying for.
+   -  `[SKILLS]`: List your skills related to the job.
+   - `[EXAMPLE_QUESTIONS]`: Questions the user expects to be asked.
 3. Paste it into your AI model of choice and run it.
 4. Review the output and adapt it to what you need.
 
@@ -38,10 +40,9 @@ See the [`examples/`](./examples/) folder for filled-in demonstrations showing t
 
 ## Customization Tips
 
-- **Want more detail?** [How to expand the output]
-- **Want it shorter?** [How to tighten it]
-- **Different context?** [What to adjust for another audience or industry]
-
+- **Want more detail?** Increase the number of interview questions, or change the output requirements of the final summary.
+- **Want it shorter?** Decrease the number of interview questions.
+- **Different context?** Change the role or the objective.
 ---
 
 ## Technical Details
@@ -49,4 +50,4 @@ See the [`examples/`](./examples/) folder for filled-in demonstrations showing t
 - **Structure:** ROLE- Role, Objective, Language, Example
 - **Technique:** Few-shot
 - **Best models:** Any models
-- **Placeholders:** [Number and type]
+- **Placeholders:** 4 placeholders
