@@ -4,12 +4,12 @@
 
 ## Overview
 
-[Two or three sentences on what this prompt produces, what problem it solves, and who would find it useful.]
+This prompt is used to help the user prepare for a test or quiz by compiling their notes into concise bullet points, then providing a list of questions for the user to answer based on the notes.
 
 **Best for:**
-- [Use case 1]
-- [Use case 2]
-- [Use case 3]
+- Studying for a quiz
+- Practicing test questions
+- Reviewing notes to retain understanding
 
 **Structure:** R-I-S-E: Request, Input, Scenario, Expectation
 
@@ -40,9 +40,9 @@ See the [`examples/`](./examples/) folder for filled-in demonstrations showing t
 
 ## Customization Tips
 
-- **Want more detail?** [How to expand the output]
-- **Want it shorter?** [How to tighten it]
-- **Different context?** [What to adjust for another audience or industry]
+- **Want more detail?** Increase the number of questions, or change how concise the reorganized notes are.
+- **Want it shorter?** Decrease the number of questions.
+- **Different context?** Change the scenario so it matches your specific situation.
 
 ---
 
@@ -50,5 +50,5 @@ See the [`examples/`](./examples/) folder for filled-in demonstrations showing t
 
 - **Structure:** R-I-S-E: Request, Input, Scenario, Expectation
 - **Technique:** Zero-shot
-- **Best models:** [Which models work best]
-- **Placeholders:** [Number and type]
+- **Best models:** Any model
+- **Placeholders:** 4 placeholders, one big input (your notes), four smaller inputs (details on what the notes are for)
